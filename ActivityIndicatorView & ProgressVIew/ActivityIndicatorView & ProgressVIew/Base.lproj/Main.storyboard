@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0tv-bv-BqQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Slider-->
+        <scene sceneID="p3u-OW-t00">
+            <objects>
+                <tableViewController title="Slider" id="0tv-bv-BqQ" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="pMS-he-zL4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="KS9-LA-pG3">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="X78-HT-16t" style="IBUITableViewCellStyleDefault" id="AvJ-Ee-K6I">
+                                        <rect key="frame" x="0.0" y="18" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AvJ-Ee-K6I" id="iT4-oN-rCC">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="ActivitiIndicator View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="X78-HT-16t">
+                                                    <rect key="frame" x="20" y="0.0" width="355" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="cbt-VX-qat" kind="show" id="ZVD-ot-hwM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="iu4-QP-Yam" style="IBUITableViewCellStyleDefault" id="IrI-aj-hGm">
+                                        <rect key="frame" x="0.0" y="62" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IrI-aj-hGm" id="kke-OA-iB9">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Progress View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="iu4-QP-Yam">
+                                                    <rect key="frame" x="20" y="0.0" width="355" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="qHC-zA-LJE" kind="show" id="7QW-dz-3Lz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="0tv-bv-BqQ" id="bre-ak-M3j"/>
+                            <outlet property="delegate" destination="0tv-bv-BqQ" id="OPR-wm-pqs"/>
+                        </connections>
+                    </tableView>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cEm-vf-1gb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4146" y="180"/>
+        </scene>
+        <!--Activity Indicator View-->
+        <scene sceneID="2rF-X0-zXo">
+            <objects>
+                <viewController title="Activity Indicator View" id="cbt-VX-qat" customClass="ActivityIndicatorViewController" customModule="ActivityIndicatorView___ProgressVIew" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oen-bg-Bg0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="h4c-zN-sM3">
+                                <rect key="frame" x="30" y="802" width="354" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7RZ-wj-2eo">
+                                        <rect key="frame" x="0.0" y="0.0" width="162" height="40"/>
+                                        <state key="normal" title="Start"/>
+                                        <connections>
+                                            <action selector="start:" destination="cbt-VX-qat" eventType="touchUpInside" id="gYt-FJ-HEF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dN-f4-8PY">
+                                        <rect key="frame" x="192" y="0.0" width="162" height="40"/>
+                                        <state key="normal" title="Stop"/>
+                                        <connections>
+                                            <action selector="stop:" destination="cbt-VX-qat" eventType="touchUpInside" id="QgD-Hx-2c0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Fmr-m1-wQj"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="lwL-uu-CyH">
+                                <rect key="frame" x="89.5" y="738" width="235.5" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hides when stopped" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbv-3y-3u9">
+                                        <rect key="frame" x="0.0" y="0.0" width="156.5" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nji-5P-pmc">
+                                        <rect key="frame" x="186.5" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="toggleHidden:" destination="cbt-VX-qat" eventType="valueChanged" id="V5N-ap-X06"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Uc7-Yi-hfK">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pZw-i9-Bmd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Uc7-Yi-hfK" firstAttribute="centerY" secondItem="Oen-bg-Bg0" secondAttribute="centerY" id="1pc-QN-Lfh"/>
+                            <constraint firstItem="pZw-i9-Bmd" firstAttribute="trailing" secondItem="h4c-zN-sM3" secondAttribute="trailing" constant="30" id="GyR-rn-yjc"/>
+                            <constraint firstItem="Uc7-Yi-hfK" firstAttribute="centerX" secondItem="Oen-bg-Bg0" secondAttribute="centerX" id="V13-AU-7eo"/>
+                            <constraint firstItem="h4c-zN-sM3" firstAttribute="top" secondItem="lwL-uu-CyH" secondAttribute="bottom" constant="33" id="VdM-M0-tTJ"/>
+                            <constraint firstItem="h4c-zN-sM3" firstAttribute="leading" secondItem="pZw-i9-Bmd" secondAttribute="leading" constant="30" id="kMV-nG-LQu"/>
+                            <constraint firstItem="lwL-uu-CyH" firstAttribute="centerX" secondItem="Oen-bg-Bg0" secondAttribute="centerX" id="lUv-sa-hHX"/>
+                            <constraint firstItem="pZw-i9-Bmd" firstAttribute="bottom" secondItem="h4c-zN-sM3" secondAttribute="bottom" constant="20" id="vka-2Z-tHv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ActivityIndicator View" id="hwt-cr-q8f"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="hiddenSwitch" destination="nji-5P-pmc" id="T2n-Ub-X8a"/>
+                        <outlet property="loader" destination="Uc7-Yi-hfK" id="Eo8-VD-OPF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j0X-j4-v5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3617" y="899"/>
+        </scene>
+        <!--Progress View-->
+        <scene sceneID="sYN-Qp-Ppy">
+            <objects>
+                <viewController title="Progress View" id="qHC-zA-LJE" customClass="ProgressViewController" customModule="ActivityIndicatorView___ProgressVIew" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p8h-0M-cGF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DPz-7t-Bpn">
+                                <rect key="frame" x="30" y="446" width="354" height="4"/>
+                                <color key="progressTintColor" systemColor="systemRedColor"/>
+                                <color key="trackTintColor" systemColor="systemOrangeColor"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcO-t3-pNH">
+                                <rect key="frame" x="20" y="764" width="374" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="uNI-48-p2m"/>
+                                </constraints>
+                                <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="update:" destination="qHC-zA-LJE" eventType="touchUpInside" id="WP3-Vh-5gr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yPB-uT-VtQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kcO-t3-pNH" firstAttribute="leading" secondItem="yPB-uT-VtQ" secondAttribute="leading" constant="20" id="1XJ-O4-dLH"/>
+                            <constraint firstItem="yPB-uT-VtQ" firstAttribute="trailing" secondItem="DPz-7t-Bpn" secondAttribute="trailing" constant="30" id="68C-k4-NWb"/>
+                            <constraint firstItem="DPz-7t-Bpn" firstAttribute="centerY" secondItem="p8h-0M-cGF" secondAttribute="centerY" id="AUG-ve-jp3"/>
+                            <constraint firstItem="yPB-uT-VtQ" firstAttribute="trailing" secondItem="kcO-t3-pNH" secondAttribute="trailing" constant="20" id="QQ7-9C-49J"/>
+                            <constraint firstItem="kcO-t3-pNH" firstAttribute="bottom" secondItem="yPB-uT-VtQ" secondAttribute="bottom" id="Yrx-6u-ejQ"/>
+                            <constraint firstItem="DPz-7t-Bpn" firstAttribute="leading" secondItem="yPB-uT-VtQ" secondAttribute="leading" constant="30" id="mcy-5N-Pht"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Progress View" id="zHC-7s-DXF"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="progress" destination="DPz-7t-Bpn" id="FQb-Pk-5sS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F3v-CI-6nc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4807.2463768115949" y="898.66071428571422"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
