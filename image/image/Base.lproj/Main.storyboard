@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wcb-Rj-1Lu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="image" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nNt-uO-i2r">
+                                <rect key="frame" x="82" y="323" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="Pfy-Xq-yss"/>
+                                    <constraint firstAttribute="width" constant="250" id="TjT-8D-Qbj"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nNt-uO-i2r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MCS-yG-7as"/>
+                            <constraint firstItem="nNt-uO-i2r" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NQ6-aX-RZ5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageVIew" destination="nNt-uO-i2r" id="NV1-14-9bf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="113.83928571428571"/>
+        </scene>
+        <!--Resizing Image View Controller-->
+        <scene sceneID="HhA-Os-j4f">
+            <objects>
+                <viewController id="Wcb-Rj-1Lu" customClass="ResizingImageViewController" customModule="image" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Wa-cf-lMl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="배경화면" translatesAutoresizingMaskIntoConstraints="NO" id="fls-Gi-EuS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lYu-2V-UM3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="fls-Gi-EuS" id="fGQ-1c-GR0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKZ-91-tqs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1109" y="-657"/>
+        </scene>
+        <!--Resizable Image View Controller-->
+        <scene sceneID="3z4-c9-NLu">
+            <objects>
+                <viewController id="I9T-D6-Kxu" customClass="resizableImageViewController" customModule="image" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eMy-60-l9Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIf-gm-0dd">
+                                <rect key="frame" x="90" y="331" width="234" height="234"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="instagram"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="im8-9q-c4A"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn" destination="KIf-gm-0dd" id="aeN-5d-261"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fGR-sc-uHU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1109" y="114"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UQF-v8-Xce">
+            <objects>
+                <viewController id="19E-J3-UGf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Zw-bm-Zqp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="25531" translatesAutoresizingMaskIntoConstraints="NO" id="Ost-Hw-WqB">
+                                <rect key="frame" x="-3999" y="-217" width="4676" height="4676"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="25531" translatesAutoresizingMaskIntoConstraints="NO" id="PpX-eg-RCo">
+                                <rect key="frame" x="20" y="68" width="374" height="437"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Od5-0M-HSd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ewy-iv-pkS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2034.7826086956522" y="113.83928571428571"/>
+        </scene>
+        <!--Template Image View Controller-->
+        <scene sceneID="zJp-Jf-IOG">
+            <objects>
+                <viewController id="Vcz-n0-trg" customClass="TemplateImageViewController" customModule="image" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RxG-nA-XEU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="c4M-H3-0LO">
+                                <rect key="frame" x="107" y="310.5" width="200" height="275.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVT-If-1ez">
+                                        <rect key="frame" x="75" y="0.0" width="50.5" height="40.5"/>
+                                        <state key="normal" backgroundImage="twitter"/>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="JNj-g4-a9Q">
+                                        <rect key="frame" x="0.0" y="75.5" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="mmk-Vp-3dn"/>
+                                            <constraint firstAttribute="width" constant="200" id="oiD-JG-NhG"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uSD-QA-EDV">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="53b-xC-2CO">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fH3-yq-Rz2"/>
+                                    <barButtonItem title="Item" image="twitter" id="WMM-A4-tdX"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ok6-LE-ckg"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bKE-F8-Enj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uSD-QA-EDV" firstAttribute="trailing" secondItem="bKE-F8-Enj" secondAttribute="trailing" id="4AB-FS-EPg"/>
+                            <constraint firstItem="c4M-H3-0LO" firstAttribute="centerY" secondItem="RxG-nA-XEU" secondAttribute="centerY" id="DkE-VF-tGY"/>
+                            <constraint firstItem="uSD-QA-EDV" firstAttribute="leading" secondItem="bKE-F8-Enj" secondAttribute="leading" id="Vff-Ad-VMq"/>
+                            <constraint firstItem="uSD-QA-EDV" firstAttribute="bottom" secondItem="bKE-F8-Enj" secondAttribute="bottom" id="dEV-yY-vI7"/>
+                            <constraint firstItem="c4M-H3-0LO" firstAttribute="centerX" secondItem="RxG-nA-XEU" secondAttribute="centerX" id="u4Y-tC-VWl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="JNj-g4-a9Q" id="ojZ-8H-ywS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Usu-dr-U62" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2787" y="114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="25531" width="1558.6666259765625" height="1558.6666259765625"/>
+        <image name="instagram" width="233.33332824707031" height="233.33332824707031"/>
+        <image name="twitter" width="50.333332061767578" height="40.666667938232422"/>
+        <image name="배경화면" width="918.33331298828125" height="1224.3333740234375"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
