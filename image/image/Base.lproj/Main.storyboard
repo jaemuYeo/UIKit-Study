@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wcb-Rj-1Lu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vcz-n0-trg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -101,7 +101,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="25531" translatesAutoresizingMaskIntoConstraints="NO" id="PpX-eg-RCo">
-                                <rect key="frame" x="20" y="68" width="374" height="437"/>
+                                <rect key="frame" x="0.0" y="0.0" width="243" height="453"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -166,11 +166,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Usu-dr-U62" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2787" y="114"/>
+            <point key="canvasLocation" x="2786.9565217391305" y="113.83928571428571"/>
         </scene>
     </scenes>
     <resources>
-        <image name="25531" width="1558.6666259765625" height="1558.6666259765625"/>
+        <image name="25531" width="2338" height="2338"/>
         <image name="instagram" width="233.33332824707031" height="233.33332824707031"/>
         <image name="twitter" width="50.333332061767578" height="40.666667938232422"/>
         <image name="배경화면" width="918.33331298828125" height="1224.3333740234375"/>
