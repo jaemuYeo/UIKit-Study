@@ -58,7 +58,7 @@ extension CollectionViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath) as! HeaderCollectionReusableView
         
-        header.sectionTitleLabel.text = sectionLabel[indexPath.section]
+        header.sectionTitleLabel.text = sectionLabel[indexPath.item]
         
         return header
     }

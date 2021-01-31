@@ -237,6 +237,7 @@
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstItem="j0w-Cc-YFt" firstAttribute="leading" secondItem="5xg-7b-RQi" secondAttribute="leadingMargin" id="17r-h6-mOd"/>
+                                        <constraint firstItem="j0w-Cc-YFt" firstAttribute="centerY" secondItem="5xg-7b-RQi" secondAttribute="centerY" id="5Y8-vZ-Jms"/>
                                         <constraint firstItem="j0w-Cc-YFt" firstAttribute="centerY" secondItem="5xg-7b-RQi" secondAttribute="centerY" id="sdb-zw-7gJ"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="j0w-Cc-YFt" secondAttribute="trailing" constant="150" id="tce-OU-7pt"/>
                                     </constraints>

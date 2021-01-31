@@ -51,13 +51,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		27440A9C25BD74890083798E /* image */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = image;
-			sourceTree = "<group>";
-		};
 		27F377E525BB38B700F366AD = {
 			isa = PBXGroup;
 			children = (
@@ -77,7 +70,6 @@
 		27F377F025BB38B700F366AD /* ThisWeekStudy */ = {
 			isa = PBXGroup;
 			children = (
-				27440A9C25BD74890083798E /* image */,
 				27F377F125BB38B700F366AD /* AppDelegate.swift */,
 				27F377F325BB38B700F366AD /* SceneDelegate.swift */,
 				27440A7625BC0FAA0083798E /* Extensions.swift */,
